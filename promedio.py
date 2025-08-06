@@ -1,5 +1,5 @@
 print("\nCiclo while: Teclea la calificación del 0 al 100 (numero negativo para salir)")
-cal=0
+cal=1
 suma=0
 cont=0
 while cal >= 0:
@@ -7,7 +7,9 @@ while cal >= 0:
     if cal>0:
         suma=suma + cal
     cont=cont + 1
-promedio=suma/cont 
+if cont-1 >0:
+    promedio=suma/(cont-1)
+     
 print("Calificaciones ingresadas", cont)   
 print ("El promedio es", promedio)
 print("Terminaste el ciclo.")
